@@ -1,0 +1,230 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViajesOmnibus</title>
+    <!-- css stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+<body>
+    <!-- WebContainer -->
+    <div class="container-app">
+        <!-- navBar -->
+        <nav class="navBar1" id="mainNavBar">
+            <a href="#home">Viaja en OvniBondi</a>
+            <a href="#service">Mi viaje en micro</a>
+            <a href="#about">Alquiler de unidades</a>
+            <a href="#contact">Seguimiento de encomiendas</a>
+            <a href="javascript:void(0);" class="icon" onClick="openDrawerMenu()">&#9776;</a>
+            <!--&#9776; is the code for the 3 line menu button-->
+          </nav>
+
+          <!-- slider img -->
+          <ul class="slides">
+            <input type="radio" name="radio-btn" id="img-1" checked />
+            <li class="slide-container">
+            <div class="slide">
+              <img src="http://farm9.staticflickr.com/8072/8346734966_f9cd7d0941_z.jpg" />
+                </div>
+            <div class="nav">
+              <label for="img-6" class="prev">&#x2039;</label>
+              <label for="img-2" class="next">&#x203a;</label>
+            </div>
+            </li>
+        
+            <input type="radio" name="radio-btn" id="img-2" />
+            <li class="slide-container">
+                <div class="slide">
+                  <img src="http://farm9.staticflickr.com/8504/8365873811_d32571df3d_z.jpg" />
+                </div>
+            <div class="nav">
+              <label for="img-1" class="prev">&#x2039;</label>
+              <label for="img-3" class="next">&#x203a;</label>
+            </div>
+            </li>
+        
+            <input type="radio" name="radio-btn" id="img-3" />
+            <li class="slide-container">
+                <div class="slide">
+                  <img src="http://farm9.staticflickr.com/8068/8250438572_d1a5917072_z.jpg" />
+                </div>
+            <div class="nav">
+              <label for="img-2" class="prev">&#x2039;</label>
+              <label for="img-4" class="next">&#x203a;</label>
+            </div>
+            </li>
+        
+            <input type="radio" name="radio-btn" id="img-4" />
+            <li class="slide-container">
+                <!-- <div class="slide">
+                  <img src="http://farm9.staticflickr.com/8061/8237246833_54d8fa37f0_z.jpg" />
+                </div> -->
+            <div class="nav">
+              <label for="img-3" class="prev">&#x2039;</label>
+              <label for="img-5" class="next">&#x203a;</label>
+            </div>
+            </li>
+        
+            <input type="radio" name="radio-btn" id="img-5" />
+            <li class="slide-container">
+                <div class="slide">
+                  <img src="http://farm9.staticflickr.com/8055/8098750623_66292a35c0_z.jpg" />
+                </div>
+            <div class="nav">
+              <label for="img-4" class="prev">&#x2039;</label>
+              <label for="img-6" class="next">&#x203a;</label>
+            </div>
+            </li>
+        
+            <input type="radio" name="radio-btn" id="img-6" />
+            <li class="slide-container">
+                <div class="slide">
+                  <img src="http://farm9.staticflickr.com/8195/8098750703_797e102da2_z.jpg" />
+                </div>
+            <div class="nav">
+              <label for="img-5" class="prev">&#x2039;</label>
+              <label for="img-1" class="next">&#x203a;</label>
+            </div>
+            </li>
+        
+            <li class="nav-dots">
+              <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+              <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+              <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+              <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+              <!-- <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+              <label for="img-6" class="nav-dot" id="img-dot-6"></label> -->
+            </li>
+        </ul>
+
+          <!-- main -->
+          <div class="form-container">
+            <form action="" class="form-search">
+                <div>
+                    <div>
+                        <label for="">Ciudad de origen</label>
+                    </div>
+                    <div>
+                    <input type="text">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="">Ciudad de destino</label>
+                    </div>
+                    <div>
+                    <input type="text">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="">Ciudad de origen</label>
+                    </div>
+                    <div>
+                    <input type="date">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="">Pasajeros</label>
+                    </div>
+                    <div>
+                    <input type="number" min="1" placeholder="1" value="1">
+                    </div>
+                </div>
+                <div class="form-btn">
+                    <button>buscar</button>
+                </div>
+            </form>
+          </div>
+          <!-- banner -->
+         <div class="banner-container">
+             <img src="img/12cuotas-sin-interes.jpg" alt="12">
+             <img src="img/banner-promos-home-izq.png" alt="123">
+             <img src="img/banner-promos-home-der.png" alt="124">
+         </div>
+         <!-- cards  destinos-->
+         <section class="card-container">
+            <div class="card">
+                <img src="img/buenos-aires-g846fb06a0_1920.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Buenos Aires</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>   
+              <div class="card" >
+                <img src="img/buenos-aires-g846fb06a0_1920.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+              <div class="card" >
+                <img src="img/buenos-aires-g846fb06a0_1920.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+              <div class="card" >
+                <img src="img/buenos-aires-g846fb06a0_1920.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+         </section>
+         <!-- service -->
+         <section class="service-container">
+            <!-- 1 -->
+            <div class="card" >
+                <img src="img/bus-2531578_1920.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="card" >
+                <img src="img/coach-g43a65accb_1280.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="card" >
+                <img src="img/hands-600497_1920.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+         </section>
+         <hr>
+         <!-- newsletter -->
+         <section class="newsletter-container">
+             <div>
+                 <p>No te pierdas ninguna promoción</p>
+             </div>
+             <div>
+                 <form action="" class="newsletter-form">
+                     <div><input type="text" placeholder="Ingresa tu E-mail"></div>
+                     <div><button>Suscribirse</button></div>
+                 </form>
+             </div>
+         </section>
+         <!-- footer -->
+         
+          <!-- SCRIPTS -->
+          <script src="js/navbar.js"></script>
+</body>
+
+</html>
